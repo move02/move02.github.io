@@ -1,0 +1,10 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name: 강남엄마
+  link: http://gangmom.kr/
+  date: May 2018 - August 2018
+  job: Backend Developer(Web)
+
+- name: 충북대학교 산합혁력단 학생연구원
+  date: October 2017 - April 2018
+  job: Test Program Developer(Computer vision)

@@ -1,0 +1,16 @@
+- name: 충북대학교 식단알리미
+  descr: 카카오톡 Auto Reply API를 이용한 충북대학교 식단알리미 제작
+  image: /img/alimi.png
+  github: https://github.com/jinmay/CBNU_menu
+
+- name: 강남엄마 Backend 개발
+  descr: Ruby on Rails 기반으로 강남엄마 서비스의 Backoffice, 블로그 크롤러 등 개발
+  image: /img/gangmom.png
+  url: https://gangmom.kr
+
+- name: Mobee - 영화 취향저격 커뮤니티
+  descr: 영화 평점 데이터를 기반으로, 비슷한 취향을 가진 사용자들을 grouping하여 SNS 형식의 게시판을 통해 커뮤니티를 이용할 수 있도록 하는 프로젝트
+  image: /img/mobee_index.png
+  github: https://github.com/move02/bigdata-project
+
+

@@ -1,0 +1,14 @@
+_site
+.sass-cache
+.directory
+Thumbs.db
+_drafts
+.ruby-version
+Gemfile.lock
+.jekyll-cache/
+.jekyll-metadata
+
+# MacOS General
+.DS_Store
+.AppleDouble
+.LSOverride

@@ -1,0 +1,62 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Move02 - Develop yourself
+email: move020202@gmail.com
+description: Develop, Enjoy - 개발을 즐기는 주니어 개발자 입니다.
+url: # the base hostname & protocol for your site
+keywords: ["move02", "til", "portfolio"]
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Korea/Seoul
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: move02
+  avatar: avatar.jpeg
+  job: "Developer"
+  bio: "Develop, Enjoy - 개발을 즐기는 주니어 개발자입니다."
+  email: move020202@gmail.com
+  disqus-shortname: move02
+  bing-verify:
+  github: move02
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: dongyoung-lee-528584186
+  skype: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  500px: #username
+  codepen: #username
+  reddit: #username
+  telegram: #username
