@@ -12,7 +12,7 @@ Server Program (Servlet)
 
 ## WebServer & WAS
 
-<center><img src="../img/webserver-was.png"></center>
+<center><img src="/img/webserver-was.png"></center>
 
 ### Web Server
 - 기본적으로 Http 프로토콜을 기반으로 한 요청에 맞는 **Static Content**(파일)을 Client에게 제공하는 역할
