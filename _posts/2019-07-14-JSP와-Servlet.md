@@ -5,13 +5,54 @@ excerpt: "JSP와 Servlet에 대해 간단하게 정리해보았습니다"
 categories: [TIL]
 comments: true
 ---
+Server Program (Servlet)
+=========
 
-### WebServer의 역할
+> 날짜 : 19.06.27
 
-<center><img src="/img/webservice.png"></center>
+## WebServer & WAS
 
+<center><img src="../img/webserver-was.png"></center>
 
-### Servlet & JSP
+### Web Server
+- 기본적으로 Http 프로토콜을 기반으로 한 요청에 맞는 **Static Content**(파일)을 Client에게 제공하는 역할
+- 동적인 요청은 WAS에 넘김
+> **어떻게 넘기지?**
+WAS에서 처리할 요청들을 미리 XML 등의 설정파일을 이용하여 설정하고, 해당 패턴하는 요청을 받으면 WAS로 넘기는 형식.
+
+### WAS
+- DB와 연동하여 다양한 비즈니스 로직을 처리하기 위해 만들어진 Application Server
+- 대부분의 경우 Web Server의 기능(static content 제공)을 포함.
+> **등장 배경**
+기존 Web Server는 요청에 따른 정적인 파일만 제공하기 때문에, Client에 로직이 들어있어야 했음. 이에 따라 Client 프로그램의 부하, 로직 변경에 따른 Client 패치, 보안 문제 등의 문제가 발생. 이를 해결하기 위해 미들웨어 개념의 WAS가 등장.
+
+#### WebServer와 WAS를 함께 사용하는 이유
+- WAS에서도 Web Server의 기능을 충분히 제공하기 때문에 WAS만 써도 서비스 가능.
+- 예전에는 static content 요청과 dynamic content 요청을 분리하여 부하 분산 등의 이유로 나누어서 사용.
+- 지금의 WAS -> 굳이 나누지 않아도 충분히 고성능
+- But, 그럼에도 현업에서는 함께 사용.
+    - Web Server는 WAS보다 상대적으로 간단한 구조
+    - 대용량 웹 어플리케이션은 여러 대의 서버로 운영
+    - WAS에서 문제가 발생하는 경우 Web Server에서 WAS가 문제 수정 후 재시작 할 때까지 해당 WAS를 이용하지 못 하도록 막아둠.
+    - 서비스 이용자는 WAS의 이상을 느끼지 못하고 서비스 이용 가능.
+    - => 장애 극복 (Fail over)에 유리한 구조
+
+#### 동작 순서
+1. Client에서 Servlet을 요청
+2. 웹 서버에서 Servlet 요청을 인식하여 WAS의 Container에 요청을 넘김.
+3. Container는 Thread를 생성하여 Servlet 객체를 이용하여 작업 수행
+    3-1. Servlet의 `init()` 메소드를 호출하여 객체 생성 (해당 Servlet이 처음 요청인 경우)
+    3-2. 생성된 객체는 메모리에 남아서 Tomcat 자원 해제 시 까지 남아있음(Singleton)
+    3-3. 수행 시 마다, WAS의 ThreadPool을 이용하여 Thread를 생성, 호출하고 생성된 Thread에 Servlet을 할당하여 요청 수행 (여러 요청이 한 번에 들어와도 수행속도가 빠름)
+    3-4. `service()` 메소드(요청에 따라 `doGet()`, `doPost()`로 분기)를 통해 요청 수행함.
+    3-5. 요청 작업 종료 시, Thread 종료
+4. 요청 처리결과를 Web Server에 전송
+5. Web Server는 Client에게 결과 전송
+
+#### 
+    
+
+## Servlet & JSP
 
 JSP를 실행하게 되면 JSP => Servlet => HTML의 변환과정을 거쳐 Client에게 전달됨.
 
