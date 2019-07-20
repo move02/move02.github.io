@@ -48,8 +48,6 @@ WAS에서 처리할 요청들을 미리 XML 등의 설정파일을 이용하여 
     3-5. 요청 작업 종료 시, Thread 종료
 4. 요청 처리결과를 Web Server에 전송
 5. Web Server는 Client에게 결과 전송
-
-#### 
     
 
 ## Servlet & JSP
