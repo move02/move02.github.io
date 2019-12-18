@@ -24,8 +24,8 @@ layout: default
       {% if post.link %}
       <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title | escape }}"><i class="fa fa-external-link"></i></a>
       {% endif %}
-      <a href="{{ site.url }}{{ post.url }}#disqus_thread">Post a comment</a>
     </h4>
+    <a href="{{ site.url }}{{ post.url }}#disqus_thread">댓글 달기</a>
 
     {% if post.author %}
       {% assign author = site.data.authors[post.author] %}
