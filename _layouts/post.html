@@ -1,20 +1,15 @@
 ---
 layout: default
-comments: true
 ---
 
-<a class="btn" href= "{{ site.url }}/" >
+<a class="btn" href="{{ site.url }}/">
   Home
 </a>
 {% if page.image.feature %}
 <div class="post-image-feature">
-  <img class="feature-image" src=
-  {% if page.image.feature contains 'https' or page.image.feature contains 'http' %}
-  "{{ page.image.feature }}"
-  {% else %}
-  "{{ site.url }}/img/{{ page.image.feature }}"
-  {% endif %}
-  alt="{{ page.title | escape }} feature image">
+  <img class="feature-image"
+    src={% if page.image.feature contains 'https' or page.image.feature contains 'http' %} "{{ page.image.feature }}"
+    {% else %} "{{ site.url }}/img/{{ page.image.feature }}" {% endif %} alt="{{ page.title | escape }} feature image">
 
   {% if page.image.credit %}
   <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
@@ -45,19 +40,24 @@ comments: true
   <h6>공유하기 : </h6>
   <ul>
     <li>
-      <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+      <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter btn"
+        title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook btn"
+        title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
     </li>
     <li>
-      <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+      <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" class="google-plus btn"
+        title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
     </li>
     <li>
-      <a href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
+      <a href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}" class="hacker-news btn"
+        title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
     </li>
     <li>
-      <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+      <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn"
+        title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
     </li>
   </ul>
 </div><!-- end share-buttons -->
@@ -65,22 +65,22 @@ comments: true
 {% if site.owner.disqus-shortname and post.comments == true %}
 <div id="disqus_thread"></div>
 <script>
+  /**
+   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  var disqus_config = function () {
+    this.page.url = "https://move02.github.io"; // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "move02-github-io"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
 
-var disqus_config = function () {
-  this.page.url = "https://move02.github.io";  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = "move02-github-io"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://move02-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+  (function () { // DON'T EDIT BELOW THIS LINE
+    var d = document,
+      s = d.createElement('script');
+    s.src = 'https://move02-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}
