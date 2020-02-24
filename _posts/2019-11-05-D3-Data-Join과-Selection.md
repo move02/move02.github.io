@@ -2,7 +2,7 @@
 layout: post
 title: D3 Data join과 Selection
 excerpt: "D3의 핵심 개념인 Data Join과 Selection에 대해 정리한 것."
-categories: [TIL]
+categories: [TIL - D3]
 comments: true
 ---
 

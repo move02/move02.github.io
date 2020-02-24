@@ -2,7 +2,7 @@
 layout: post
 title: Spring AOP 용어 정리
 excerpt: "Spring AOP 및 AOP 관련 용어 정리"
-categories: [TIL]
+categories: [TIL - Spring]
 comments: true
 ---
 

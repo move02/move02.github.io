@@ -2,7 +2,7 @@
 layout: post
 title: Spring MVC 설정 정리
 excerpt: "Spring MVC를 사용하기 위한 설정 정리"
-categories: [TIL]
+categories: [TIL - Spring]
 comments: true
 ---
 

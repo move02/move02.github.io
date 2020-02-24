@@ -2,7 +2,7 @@
 layout: post
 title: 생성-Factory method
 excerpt: "생성 패턴 중 Factory method 패턴에 대해 알아본다."
-categories: [DesignPattern]
+categories: [TIL - Design Pattern]
 comments: true
 ---
 

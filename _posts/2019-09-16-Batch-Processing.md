@@ -2,7 +2,7 @@
 layout: post
 title: Batch Processing
 excerpt: "Batch 프로세싱에 대한 정리와 Java(JDBC)에서의 응용"
-categories: [TIL]
+categories: [TIL - 기타]
 comments: true
 ---
 

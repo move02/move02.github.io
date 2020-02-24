@@ -2,7 +2,7 @@
 layout: post
 title: 생성-Abstract Factory
 excerpt: "생성 패턴 중 Abstract Factory 패턴에 대해 알아본다."
-categories: [DesignPattern]
+categories: [TIL - Design Pattern]
 comments: true
 ---
 
