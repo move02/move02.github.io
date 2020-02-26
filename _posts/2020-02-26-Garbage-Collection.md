@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Threadsafe - 2
+title: Java Garbage Collection 기본 정리
 excerpt: "Java 의 Garbage Collection 기능에 대해 기본적인 것을 정리해보았다."
 categories: [TIL - Java]
 comments: true
