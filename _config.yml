@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Move02 - Develop yourself
+title: move02's blog
 email: move020202@gmail.com
-description: Develop, Enjoy - 개발을 즐기는 주니어 개발자 입니다.
+description: Develop, Enjoy - 즐기면서 개발하기
 url: # the base hostname & protocol for your site
 keywords: ["move02", "til", "portfolio"]
 
@@ -36,7 +36,7 @@ owner:
   name: move02
   avatar: avatar.png
   job: "Developer"
-  bio: "Develop, Enjoy - 개발을 즐기는 주니어 개발자입니다."
+  bio: "Develop, Enjoy - 즐기면서 개발하기"
   email: move020202@gmail.com
   bing-verify:
   github: move02
