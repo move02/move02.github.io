@@ -18,3 +18,12 @@
   image: /img/mobee_index.png
   github: https://github.com/move02/bigdata-project
 
+- name: 자연재난 시뮬레이션
+  descr: 폭우, 폭설, 태풍 등 자연재난에 대한 확률기반 시뮬레이션의 GIS 데이터 시각화 구현.
+
+- name: 감염병 확산 시뮬레이션
+  descr: 코로나 19의 확산 모의실험 프로젝트. <br>STEM과 Netlogo 두 가지 툴로 구현했으며, SEIR 모형을 확장구현한 SAIRD 모형을 기반으로 실험
+
+- name: 발전사 안전사고 데이터 공유 시스템
+  descr: 발전사 안전사고 데이터를 작업과 사고이력으로 정형화하여 데이터를 공유할 수 있도록 만든 시스템
+  
