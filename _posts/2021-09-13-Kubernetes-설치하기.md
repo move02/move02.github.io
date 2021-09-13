@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Kubernetes] 쿠버네티스 설치하기
+title: \[Kubernetes\] 쿠버네티스 설치하기
 categories: [TIL-Kubernetes]
 comments: true
 ---
