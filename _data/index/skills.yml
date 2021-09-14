@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: LearningCurve, Git, Java, RubyOnRails, Python, Mysql
-percentage: 90, 60, 70, 80, 70, 70
+aspects: LearningCurve, Git, Spring, RubyOnRails, Python, Communication
+percentage: 90, 60, 70, 60, 65, 80
