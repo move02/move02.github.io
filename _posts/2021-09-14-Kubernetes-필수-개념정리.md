@@ -1,6 +1,6 @@
 ---
 layout: post
-title: \[Kubernetes\] 필수개념 정리
+title: Kubernetes - 필수개념 정리
 categories: [TIL-Kubernetes]
 comments: true
 ---
