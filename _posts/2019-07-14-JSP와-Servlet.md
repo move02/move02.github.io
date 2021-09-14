@@ -2,7 +2,7 @@
 layout: post
 title: JSP와 Servlet
 excerpt: "JSP와 Servlet에 대해 간단하게 정리해보았습니다"
-categories: [TIL - Java,Spring]
+categories: [TIL - Java, TIL- Spring]
 comments: true
 ---
 Server Program (Servlet)
