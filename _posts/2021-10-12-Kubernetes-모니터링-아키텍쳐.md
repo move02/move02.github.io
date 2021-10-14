@@ -1,7 +1,8 @@
 ---
-Title: Kuberenetes 모니터링 아키텍쳐
-Author: move02
-Date: 2021.10.12
+layout: post
+title: Kuberenetes 모니터링 아키텍쳐
+categories: [TIL-Kubernetes]
+comments: true
 ---
 
 # Kuberenetes 모니터링 아키텍쳐
